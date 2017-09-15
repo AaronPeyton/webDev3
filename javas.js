@@ -20,5 +20,6 @@ $(document).ready(function() {
       $(".learn").hide();
       $(".quiz").show();
     }
+	//everyones quiz page
   });
 });
