@@ -1,15 +1,24 @@
+var quizMode = false;
+
 $(document).ready(function() {
 
-  $('.switch-input').on('change', function() {
-    var isChecked = $(this).is(':checked');
-    var selectedData;
-    var $switchLabel = $('.switch-label');
-    if (isChecked) {
-      $("#learn").hide();
-      $("#quiz").show();
-    } else {
-      $("#quiz").hide();
-      $("#learn").show();
+  if (quizMode) {
+    $(".learn").hide();
+    $(".quiz").show();
+  } else {
+    $(".learn").show();
+    $(".quiz").hide();
+  }
+
+  $(".clickME").click(function() {
+    if (quizMode == true) {
+      quizMode = false;
+      $(".learn").show();
+      $(".quiz").hide();
+    } else if (quizMode == false) {
+      quizMode = true;
+      $(".learn").hide();
+      $(".quiz").show();
     }
   });
 });
