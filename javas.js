@@ -1,5 +1,5 @@
 var quizMode = false;
-
+var a = 1;
 $(document).ready(function() {
 
   if (quizMode) {
@@ -20,6 +20,12 @@ $(document).ready(function() {
       $(".learn").hide();
       $(".quiz").show();
     }
-	//everyones quiz page
   });
+
+//everyones quiz page
+
+	$(".Q").click(function(){
+		$("#A" + a).slideDown();
+		a++;
+	});
 });
