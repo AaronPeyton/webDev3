@@ -10,9 +10,15 @@ body {
   font-size: 150%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, footer {
   text-align: center;
   color: black;
+}
+
+p.A, p.Q {
+  text-align: center;
+  color: black;
+  font-size: 150%;
 }
 
 img {
@@ -101,9 +107,8 @@ input:checked+.slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-  
 }
 
-.A{
-	display: none;
+.A {
+  display: none;
 }
