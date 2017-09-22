@@ -10,9 +10,14 @@ body {
   font-size: 150%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, footer {
   text-align: center;
   color: black;
+}
+
+.A, .Q {
+  text-align: center;
+  font-size: 150%;
 }
 
 img {
@@ -101,30 +106,22 @@ input:checked+.slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-  
 }
 
-.A{
-	display: none;
-	
-    
+.A {
+  display: none;
+}
 
-}
-.Q
-{
-	
-    
+.Q {}
 
+#D {
+  background-color: lightblue;
 }
-#D 
-{
-    background-color: lightblue;
+
+#I {
+  background-color: tomato;
 }
-#I 
-{
-    background-color: tomato;
-}
-#T 
-{
-    background-color: MediumSeaGreen;
+
+#T {
+  background-color: MediumSeaGreen;
 }
