@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body id = "I">
   <!--nav bar-->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -39,14 +39,27 @@
   </nav>
 
   <!--page content-->
-  <h1>Intigration Rules</h1>
+  
 
-  <img src ="IntigrationRules.PNG" >
-     <h2 id="h2">Test Time</h2>
-   <p></p>
-   <h3 id="h3">Instructions: the questions on this quiz are based off the derivative rules. Answer the following questions to  the best of your ability</h2>
-   <p></p>
-   <p id = "Q1" class = "Q"> what is the integral of ∫a</p>
+  <div class="content">
+    <h1>Intigration Rules</h1>
+
+    <label class="switch">
+      <input class="clickME" type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <label class="switchTitle">Quiz mode</label>
+  </div>
+
+  <div class="content learn">
+    <img src="IntigrationRules.PNG">
+  </div>
+  <div class="content quiz">
+    <h2 id="h2">Test time!!!!</h2>
+    <p></p>
+    <h3 id="h3">Instructions: the questions on this quiz are based off the derivative rules. Answer the following questions to  the best of your ability</h2>
+    <p></p>
+      <p id = "Q1" class = "Q"> what is the integral of ∫a</p>
    <p id ="A1" class = "A">ax+C</p>
    <p id="Q2" class = "Q"> what is the integral of ∫(1/x)</p>
    <p id = "A2" class = "A">ln|x|+C</p>
@@ -66,8 +79,7 @@
    <p id = "A9" class = "A">tan(x)+C</p>
    <p id="Q10" class = "Q"> what is the integral of ∫x^n</p>
    <p id = "A10" class = "A">∫f+∫g</p>
-   
-
+  </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
