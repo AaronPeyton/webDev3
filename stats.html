@@ -10,13 +10,12 @@
 
   <!-- Latest compiled and minified bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
   <link rel="stylesheet" href="style.css">
-  <title>Home - My Webpage</title>
+  <title>Statistics Rules</title>
 
 </head>
 
-<body id = "H">
+<body id = "I">
   <!--nav bar-->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -25,38 +24,72 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-		  <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">My Website</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavBar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="trig.html">Trig Functions</a></li>
           <li><a href="derivative.html">Derivative Rules</a></li>
           <li><a href="integral.html">Integration Rules</a></li>
-		  <li><a href="stats.html">Statistic Rules</a></li>
+		  <li class="active"><a href="stats.html">Statistic Rules</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!--page content-->
-  <h1>Home Page</h1>
-  <p id="home">
-    This website is a final project of sorts in which we display our capabilities with Hyper Text Markup Language, Cascading Style Sheets and Javascript. This website can be used as a resource for calculus to learn as well as to quiz yourself on formulas
-    you may come across.
-  </p>
-  <img src="Math.JPG" alt="not working" style="width:500px;height:400px;">
-  <br>
-  <footer>This website was made by Aaron, Brendan, and Preston</footer>
+  
 
+  <div class="content">
+    <h1>Statistics Rules</h1>
+
+    <label class="switch">
+      <input class="clickME" type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <label class="switchTitle">Quiz mode</label>
+  </div>
+
+  <div class="content learn">
+    <img src="IntigrationRules.PNG">
+  </div>
+  <div class="content quiz">
+    <h2 id="h2">Test time!!!!</h2>
+    <p></p>
+    <h3 id="h3">Instructions: the questions on this quiz are based off the Statistic rules. Answer the following questions to  the best of your ability</h2>
+    <p></p>
+      <p id = "Q1" class = "Q"> 1.what is the integral of ∫a</p>
+   <p id ="A1" class = "A">ax+C</p>
+   <p id="Q2" class = "Q"> 2.what is the integral of ∫(1/x)</p>
+   <p id = "A2" class = "A">ln|x|+C</p>
+   <p id="Q3" class = "Q"> 3.what is the integral of ∫ln(x)</p>
+   <p id = "A3" class = "A">xln(x)-x+C</p>
+   <p id="Q4" class = "Q"> 4.what is the integral of ∫cos(x)</p>
+   <p id = "A4" class = "A">sin(x)+C</p>
+   <p id="Q5" class = "Q"> 5.what is the integral of ∫sin(x)</p>
+   <p id = "A5" class = "A">-cos(x)+C</p>
+   <p id="Q6" class = "Q"> 6.what is the integral of ∫cf(x)</p>
+   <p id = "A6" class = "A">c∫f(x)</p>   
+   <p id="Q7" class = "Q"> 7.what is the integral of ∫(f-g)</p>
+   <p id = "A7" class = "A">∫f-∫g</p>
+   <p id="Q8" class = "Q"> 8.what is the integral of ∫e^x</p>
+   <p id = "A8" class = "A">e^x+C</p>
+   <p id="Q9" class = "Q"> 9.what is the integral of ∫sec^2(x)</p>
+   <p id = "A9" class = "A">tan(x)+C</p>
+   <p id="Q10" class = "Q"> 10.what is the integral of ∫x^n</p>
+   <p id = "A10" class = "A">∫f+∫g</p>
+  </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- local javaScript -->
+  <script src="javas.js"></script>
 
 </body>
 
