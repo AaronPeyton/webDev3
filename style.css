@@ -119,14 +119,20 @@ input:checked+.slider:before {
 }
 
 #I {
-  background-color: tomato;
+  background-color: pink;
 }
 
 #T {
-  background-color: MediumSeaGreen;
+  background-color: MediumAquamarine;
 }
-#H
-{
-	background-color: Violet;
+
+#H {
+  background-color: Plum;
 }
+
+#S {
+  background-color: LavenderBlush;
+}
+
+
 }
