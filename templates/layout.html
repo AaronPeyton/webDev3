@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="static/style.css">
-    <title>Derivative Rules</title>
+    <title>{% block title %}{% endblock %} - My Webpage</title>
 
 </head>
 
@@ -30,59 +30,20 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavBar">
                 <ul class="nav navbar-nav">
-                    <li><a href=".">Home</a></li>
-                    <li><a href="p1">Trig Functions</a></li>
-                    <li class="active"><a href="p2">Derivative Rules</a></li>
-                    <li><a href="p3">Integration Rules</a></li>
-                    <li><a href="p4">Statistic Rules</a></li>
+                    <li>{% if active_page == "Home" %} class = "active"{% endif %}><a href=".">Home</a></li>
+                    <li>{% if active_page == "Trig Functions" %} class = "active"{% endif %}><a href=".">Trig Functions</a></li>
+                    <li class="active">{% if active_page == "Derivative Rules" %} class = "active"{% endif %}><a href=".">Derivative Rules</a></li>
+                    <li>{% if active_page == "Integration rules" %} class = "active"{% endif %}><a href=".">Integration Rules</a></li>
+                    <li>{% if active_page == "Statistic Rules" %} class = "active"{% endif %}><a href=".">Statistic Rules</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!--page content-->
+    {% block content %}{% endblock %}
 
-    <div class="content">
-        <h1>Derivative Rules</h1>
-
-        <label class="switch">
-      <input class="clickME" type="checkbox">
-      <span class="slider round"></span>
-    </label>
-        <label class="switchTitle">Quiz mode</label>
-    </div>
-
-    <div class="content learn">
-        <img src="{{url_for('static', filename='images/Derivative_rules.PNG')}}" alt="not working">
-    </div>
-
-    <div class="content quiz">
-
-        <h2 id="h2">Test time!!!!</h2>
-        <p></p>
-        <h3 id="h3">Instructions: the questions on this quiz are based off the derivative rules. Answer the following questions to  the best of your ability</h2>
-   <br>
-   <p id = "Q1" class = "Q"> 1.what is the derivative of f(x) when f(x) = c</p>
-   <p id ="A1" class = "A">0</p>
-   <p id="Q2" class = "Q">2.what is the derivative of f(x) when f(x) =  X?</p>
-   <p id = "A2" class = "A">1</p>
-   <p id="Q3" class = "Q">3.what is the derivative of f(x) when f(x) = sin(x)</p>
-   <p id = "A3" class = "A">cos(x)</p>
-   <p id="Q4" class = "Q">4.what is the derivative of f(x) when f(x) = cos(x)</p>
-   <p id = "A4" class = "A">-sin(x)</p>
-   <p id="Q5" class = "Q">5.what is the derivative of f(x) when f(x) = ln(x)</p>
-   <p id = "A5" class = "A">1/x</p>
-   <p id="Q6" class = "Q">6.what is the derivative of f(x) when f(x) = f + c</p>
-   <p id = "A6" class = "A">f' + c'</p>
-   <p id="Q7" class = "Q">7.what is the derivative of f(x) when f(x) = fg</p>
-   <p id = "A7" class = "A">fg' + gf'</p>
-   <p id="Q8" class = "Q">8.what is the derivative of f(x) when f(x) = f -g</p>
-   <p id = "A8" class = "A">f' - g'</p>
-   <p id="Q9" class = "Q">9.what is the derivative of f(x) when f(x) = f(g(x))</p>
-   <p id = "A9" class = "A">f'(g(x))*g'(x)</p>
-   <p id="Q10" class = "Q">10.what is the derivative of f(x) when f(x) = x^2 </p>
-   <p id = "A10" class = "A">2x</p>
- </div>
+  
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
