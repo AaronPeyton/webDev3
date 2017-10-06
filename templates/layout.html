@@ -30,11 +30,11 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavBar">
                 <ul class="nav navbar-nav">
-                    <li>{% if active_page == "Home" %} class = "active"{% endif %}><a href=".">Home</a></li>
-                    <li>{% if active_page == "Trig Functions" %} class = "active"{% endif %}><a href=".">Trig Functions</a></li>
-                    <li>{% if active_page == "Derivative Rules" %} class = "active"{% endif %}><a href=".">Derivative Rules</a></li>
-                    <li>{% if active_page == "Integration rules" %} class = "active"{% endif %}><a href=".">Integration Rules</a></li>
-                    <li>{% if active_page == "Statistic Rules" %} class = "active"{% endif %}><a href=".">Statistic Rules</a></li>
+                    <li {% if active_page == "Home" %} class = "active"{% endif %}><a href=".">Home</a></li>
+                    <li {% if active_page == "Trig Functions" %} class = "active"{% endif %}><a href=".">Trig Functions</a></li>
+                    <li {% if active_page == "Derivative Rules" %} class = "active"{% endif %}><a href=".">Derivative Rules</a></li>
+                    <li {% if active_page == "Integration rules" %} class = "active"{% endif %}><a href=".">Integration Rules</a></li>
+                    <li {% if active_page == "Statistic Rules" %} class = "active"{% endif %}><a href=".">Statistic Rules</a></li>
                 </ul>
             </div>
         </div>
